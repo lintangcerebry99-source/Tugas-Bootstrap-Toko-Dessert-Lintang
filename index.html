@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manis Corner - Toko Dessert</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3 shadow-sm sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-danger" href="#home">🧁 Cerry's Dessert Corner</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Buka navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pengalaman">Menu Favorit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Pesan Sekarang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" class="bg-danger bg-gradient text-white text-center py-5">
+      <div class="container">
+        <span class="badge rounded-pill text-bg-light mb-2 text-danger fw-bold">
+          Freshly Baked Everyday
+        </span>
+
+        <h1>Maniskan Harimu Bersama Kami!</h1>
+
+        <p class="lead fw-bold">
+          Toko dessert handmade yang menyajikan kue dan hidangan penutup lezat dengan bahan premium pilihan.
+        </p>
+
+        <a href="#pengalaman" class="btn btn-light text-danger fw-bold">
+          Lihat Menu Favorit
+        </a>
+      </div>
+    </div>
+
+    <div id="about" class="container py-5">
+      <h2 class="text-center mb-4 fw-bold">Tentang Cerry's dessert corner</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted">
+            Cerry's Dessert Corner berawal dari kecintaan kami dalam menghadirkan kebahagiaan lewat potongan kue dan dessert manis. 
+            Setiap produk dibuat secara higienis menggunakan resep otentik, memastikan rasa manis yang pas di lidah dan 
+            kualitas terbaik di setiap gigitannya untuk menemani momen spesialmu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pengalaman" class="container py-5 bg-light rounded-4 shadow-sm">
+      <h2 class="text-center mb-4 fw-bold">Menu Dessert Favorit</h2>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card border-danger border-2 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger fw-bold">Strawberry Shortcake</h5>
+              <p class="card-text">
+                Kue sponge lembut dengan lapisan krim vanila segar dan potongan buah stroberi manis di setiap lapisannya.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card border-danger border-2 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger fw-bold">Choco Lava Cake</h5>
+              <p class="card-text">
+                Kue cokelat panggang hangat dengan lelehan saus cokelat lumer di bagian dalam yang siap memanjakan para pencinta cokelat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card border-danger border-2 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger fw-bold">Matcha Tiramisu</h5>
+              <p class="card-text">
+                Perpaduan lembut dessert ala Italia dengan taburan bubuk matcha Jepang asli yang memberikan sensasi rasa pahit manis yang pas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-danger mt-4 mb-0 text-center" role="alert">
+        🎉 <strong>Promo Minggu Ini:</strong> Dapatkan gratis ongkir untuk pemesanan minimal 3 box dessert varian apa saja!
+      </div>
+    </div>
+
+    <div id="kontak" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Pesan / Tanya Menu</h2>
+
+        <form
+          id="formKontak"
+          class="mx-auto bg-white p-4 rounded shadow-sm border"
+          style="max-width: 500px"
+        >
+          <div class="mb-3">
+            <label for="input-nama" class="form-label">Nama Pemesan</label>
+            <input
+              type="text"
+              class="form-control"
+              id="input-nama"
+              placeholder="Masukkan nama Anda..."
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="input-pesan" class="form-label">Detail Pesanan / Pesan</label>
+            <textarea
+              class="form-control"
+              id="input-pesan"
+              rows="3"
+              placeholder="Tulis menu yang ingin dipesan..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-danger w-100 text-white fw-bold">
+            Kirim Pesanan
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalKonfirmasi"
+      tabindex="-1"
+      aria-labelledby="judulModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold text-danger" id="judulModal">
+              Konfirmasi Pesanan Dessert
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Apakah data pesanan Anda sudah benar?</p>
+            <p class="mb-1">
+              <strong>Nama:</strong> <span id="namaKonfirmasi"></span>
+            </p>
+            <p>
+              <strong>Pesanan:</strong> <span id="pesanKonfirmasi"></span>
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger text-white"
+              id="tombolKonfirmasi"
+            >
+              Ya, Kirim Pesanan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <small>&copy; 2026 - Cerry's Dessert Shop. All Rights Reserved.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const form = document.getElementById("formKontak");
+      const modal = new bootstrap.Modal(
+        document.getElementById("modalKonfirmasi")
+      );
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        document.getElementById("namaKonfirmasi").textContent =
+          document.getElementById("input-nama").value;
+
+        document.getElementById("pesanKonfirmasi").textContent =
+          document.getElementById("input-pesan").value;
+
+        modal.show();
+      });
+
+      document
+        .getElementById("tombolKonfirmasi")
+        .addEventListener("click", function () {
+          modal.hide();
+          alert("Pesanan berhasil dikonfirmasi! Kami akan segera memprosesnya.");
+
+          form.reset();
+        });
+    </script>
+  </body>
+</html>
