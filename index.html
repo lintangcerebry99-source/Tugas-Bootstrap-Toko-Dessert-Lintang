@@ -3,18 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manis Corner - Toko Dessert</title>
+    <title>Cerry's Corner - Toko Dessert</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <style>
+      body {
+        font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+        background-color: #FAF6F0;
+        color: #4A3525;
+      }
+
+      /* Custom Colors */
+      .bg-brown-dark {
+        background-color: #4A3525 !important;
+      }
+      .bg-brown-medium {
+        background-color: #8B5E3C !important;
+      }
+      .bg-beige-light {
+        background-color: #FFF8F0 !important;
+      }
+      .bg-beige-warm {
+        background-color: #F5EBE0 !important;
+      }
+      
+      .text-brown-dark {
+        color: #4A3525 !important;
+      }
+      .text-brown-medium {
+        color: #8B5E3C !important;
+      }
+
+      .btn-brown {
+        background-color: #8B5E3C;
+        color: #ffffff !important;
+        border: none;
+      }
+      .btn-brown:hover {
+        background-color: #6F482D;
+        color: #ffffff !important;
+      }
+
+      .card-custom {
+        border: 2px solid #8B5E3C !important;
+        background-color: #ffffff;
+      }
+
+      .badge-price {
+        background-color: #8B5E3C;
+        color: #ffffff !important;
+        font-size: 1rem;
+        padding: 6px 14px;
+        border-radius: 20px;
+      }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3 shadow-sm sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-beige-warm px-3 shadow-sm sticky-top border-bottom border-secondary-subtle">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-danger" href="#home">🧁 Cerry's Dessert Corner</a>
+        <a class="navbar-brand fw-bold text-brown-dark fs-4" href="#home">🍒 Cerry's Corner</a>
 
         <button
           class="navbar-toggler"
@@ -29,110 +87,153 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link text-brown-dark" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang Kami</a>
+              <a class="nav-link text-brown-dark" href="#about">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pengalaman">Menu Favorit</a>
+              <a class="nav-link text-brown-dark" href="#pengalaman">Menu Favorit</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontak">Pesan Sekarang</a>
+              <a class="nav-link text-brown-dark" href="#kontak">Pesan Sekarang</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id="home" class="bg-danger bg-gradient text-white text-center py-5">
-      <div class="container">
-        <span class="badge rounded-pill text-bg-light mb-2 text-danger fw-bold">
+    <!-- Hero Section -->
+    <div id="home" class="bg-brown-dark text-white text-center py-5 shadow-sm">
+      <div class="container py-3">
+        <span class="badge rounded-pill bg-beige-warm text-brown-dark mb-3 px-3 py-2 fw-bold fs-6">
           Freshly Baked Everyday
         </span>
 
-        <h1>Maniskan Harimu Bersama Kami!</h1>
+        <h1 class="display-4 fw-bold mb-3 text-white">Maniskan Harimu Bersama Kami!</h1>
 
-        <p class="lead fw-bold">
+        <p class="lead fw-normal text-white-50 mb-4 mx-auto" style="max-width: 650px;">
           Toko dessert handmade yang menyajikan kue dan hidangan penutup lezat dengan bahan premium pilihan.
         </p>
 
-        <a href="#pengalaman" class="btn btn-light text-danger fw-bold">
+        <a href="#pengalaman" class="btn btn-brown btn-lg px-4 fw-bold">
           Lihat Menu Favorit
         </a>
       </div>
     </div>
 
-    <div id="about" class="container py-5">
-      <h2 class="text-center mb-4 fw-bold">Tentang Cerry's dessert corner</h2>
+    <!-- About Section -->
+    <div id="about" class="bg-beige-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold text-brown-dark">Tentang Cerry's Corner</h2>
 
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <p class="text-muted">
-            Cerry's Dessert Corner berawal dari kecintaan kami dalam menghadirkan kebahagiaan lewat potongan kue dan dessert manis. 
-            Setiap produk dibuat secara higienis menggunakan resep otentik, memastikan rasa manis yang pas di lidah dan 
-            kualitas terbaik di setiap gigitannya untuk menemani momen spesialmu.
-          </p>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center">
+            <p class="fs-5 lh-lg text-brown-dark">
+              Cerry's Corner berawal dari kecintaan kami dalam menghadirkan kebahagiaan lewat potongan kue dan dessert manis. 
+              Setiap produk dibuat secara higienis menggunakan resep otentik, memastikan rasa manis yang pas di lidah dan 
+              kualitas terbaik di setiap gigitannya untuk menemani momen spesialmu.
+            </p>
+          </div>
+        </div>
+
+        <!-- Info Jadwal Buka & Pengiriman  -->
+        <div class="row text-center g-4 mt-2">
+          <div class="col-12 col-md-6">
+            <div class="p-3">
+              <h4 class="fw-bold text-brown-medium mb-2">Jadwal Buka</h4>
+              <p class="text-brown-dark mb-1">Senin – Sabtu: 09.00 - 20.00 WIB</p>
+              <p class="text-brown-dark mb-0">Minggu / Hari Libur: Tutup</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="p-3">
+              <h4 class="fw-bold text-brown-medium mb-2">Informasi Pengiriman</h4>
+              <p class="text-brown-dark mb-1">Pengiriman instan & same-day area lokal.</p>
+              <p class="text-brown-dark mb-0">Gratis ongkir minimal pembelian 3 box dessert.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="pengalaman" class="container py-5 bg-light rounded-4 shadow-sm">
-      <h2 class="text-center mb-4 fw-bold">Menu Dessert Favorit</h2>
+    <!-- Menu Section -->
+    <div id="pengalaman" class="container my-5 py-5 bg-beige-warm rounded-4 shadow-sm">
+      <h2 class="text-center mb-4 fw-bold text-brown-dark">Menu Dessert Favorit</h2>
 
       <div class="row g-4">
+        <!-- Card 1 -->
         <div class="col-12 col-md-4">
-          <div class="card border-danger border-2 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title text-danger fw-bold">Strawberry Shortcake</h5>
-              <p class="card-text">
-                Kue sponge lembut dengan lapisan krim vanila segar dan potongan buah stroberi manis di setiap lapisannya.
-              </p>
+          <div class="card card-custom shadow-sm h-100 rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
+              <div>
+                <h5 class="card-title text-brown-medium fw-bold fs-4 mb-2">Strawberry Shortcake</h5>
+                <p class="card-text text-brown-dark">
+                  Kue sponge lembut dengan lapisan krim vanila segar dan potongan buah stroberi manis di setiap lapisannya.
+                </p>
+              </div>
+              <div class="mt-4 text-center">
+                <span class="badge badge-price">Rp 35.000</span>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Card 2 -->
         <div class="col-12 col-md-4">
-          <div class="card border-danger border-2 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title text-danger fw-bold">Choco Lava Cake</h5>
-              <p class="card-text">
-                Kue cokelat panggang hangat dengan lelehan saus cokelat lumer di bagian dalam yang siap memanjakan para pencinta cokelat.
-              </p>
+          <div class="card card-custom shadow-sm h-100 rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
+              <div>
+                <h5 class="card-title text-brown-medium fw-bold fs-4 mb-2">Choco Lava Cake</h5>
+                <p class="card-text text-brown-dark">
+                  Kue cokelat panggang hangat dengan lelehan saus cokelat lumer di bagian dalam yang siap memanjakan para pencinta cokelat.
+                </p>
+              </div>
+              <div class="mt-4 text-center">
+                <span class="badge badge-price">Rp 30.000</span>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Card 3 -->
         <div class="col-12 col-md-4">
-          <div class="card border-danger border-2 shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title text-danger fw-bold">Matcha Tiramisu</h5>
-              <p class="card-text">
-                Perpaduan lembut dessert ala Italia dengan taburan bubuk matcha Jepang asli yang memberikan sensasi rasa pahit manis yang pas.
-              </p>
+          <div class="card card-custom shadow-sm h-100 rounded-3">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
+              <div>
+                <h5 class="card-title text-brown-medium fw-bold fs-4 mb-2">Matcha Tiramisu</h5>
+                <p class="card-text text-brown-dark">
+                  Perpaduan lembut dessert ala Italia dengan taburan bubuk matcha Jepang asli yang memberikan sensasi rasa pahit manis yang pas.
+                </p>
+              </div>
+              <div class="mt-4 text-center">
+                <span class="badge badge-price">Rp 40.000</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="alert alert-danger mt-4 mb-0 text-center" role="alert">
+      <div class="alert bg-brown-dark text-white mt-4 mb-0 text-center rounded-3 border-0" role="alert">
         🎉 <strong>Promo Minggu Ini:</strong> Dapatkan gratis ongkir untuk pemesanan minimal 3 box dessert varian apa saja!
       </div>
     </div>
 
+    <!-- Form Section -->
     <div id="kontak" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4 fw-bold">Pesan / Tanya Menu</h2>
+        <h2 class="text-center mb-4 fw-bold text-brown-dark">Pesan / Tanya Menu</h2>
 
         <form
           id="formKontak"
-          class="mx-auto bg-white p-4 rounded shadow-sm border"
+          class="mx-auto bg-white p-4 rounded-4 shadow-sm border border-secondary-subtle"
           style="max-width: 500px"
         >
           <div class="mb-3">
-            <label for="input-nama" class="form-label">Nama Pemesan</label>
+            <label for="input-nama" class="form-label fw-semibold text-brown-dark">Nama Pemesan</label>
             <input
               type="text"
               class="form-control"
@@ -143,23 +244,24 @@
           </div>
 
           <div class="mb-3">
-            <label for="input-pesan" class="form-label">Detail Pesanan / Pesan</label>
+            <label for="input-pesan" class="form-label fw-semibold text-brown-dark">Detail Pesanan / Pesan</label>
             <textarea
               class="form-control"
               id="input-pesan"
               rows="3"
-              placeholder="Tulis menu yang ingin dipesan..."
+              placeholder="Tulis menu dan jumlah yang ingin dipesan..."
               required
             ></textarea>
           </div>
 
-          <button type="submit" class="btn btn-danger w-100 text-white fw-bold">
+          <button type="submit" class="btn btn-brown w-100 py-2 fw-bold">
             Kirim Pesanan
           </button>
         </form>
       </div>
     </div>
 
+    <!-- Modal Konfirmasi -->
     <div
       class="modal fade"
       id="modalKonfirmasi"
@@ -169,8 +271,8 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold text-danger" id="judulModal">
+          <div class="modal-header bg-beige-warm">
+            <h5 class="modal-title fw-bold text-brown-dark" id="judulModal">
               Konfirmasi Pesanan Dessert
             </h5>
             <button
@@ -181,7 +283,7 @@
             ></button>
           </div>
 
-          <div class="modal-body">
+          <div class="modal-body text-brown-dark">
             <p>Apakah data pesanan Anda sudah benar?</p>
             <p class="mb-1">
               <strong>Nama:</strong> <span id="namaKonfirmasi"></span>
@@ -191,7 +293,7 @@
             </p>
           </div>
 
-          <div class="modal-footer">
+          <div class="modal-footer bg-beige-light">
             <button
               type="button"
               class="btn btn-secondary"
@@ -201,7 +303,7 @@
             </button>
             <button
               type="button"
-              class="btn btn-danger text-white"
+              class="btn btn-brown"
               id="tombolKonfirmasi"
             >
               Ya, Kirim Pesanan
@@ -211,10 +313,12 @@
       </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <small>&copy; 2026 - Cerry's Dessert Shop. All Rights Reserved.</small>
+    <!-- Footer -->
+    <footer class="bg-brown-dark text-white text-center py-3">
+      <small class="text-white">&copy; 2026 - Cerry's Corner Dessert Shop. All Rights Reserved.</small>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
